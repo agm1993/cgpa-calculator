@@ -1,0 +1,109 @@
+	div#c_gpa_calc {
+		align: center;
+		background: #cccccc;
+		padding: 10PX;
+	}
+	select.credit_grade {
+		width: 80px;
+	}
+	input.user_input {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: medium; 
+		color: black;
+		width: 80px;
+		src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+	}
+	input#course_input {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: medium; 
+		color: black;
+		width: 150px;
+		src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+	}
+	legend.l_gpa_result {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		color: white;
+		/*text-shadow: 2px 2px #000000;*/ 
+		text-align: center;
+		src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+	}
+	input {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: medium; 
+		color: black;
+		src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+	}
+	caption#cap {	
+		color: #000080;
+		font-family: 'Open Sans';
+		font-weight: bold;
+		font-size: 20pt; 
+		text-transform: uppercase;
+		text-rendering: optimizelegibility;
+		line-height: 26px;
+		margin-bottom: 0px;
+		src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+	}
+	th.t_header {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+		text-align:center; 
+		font-size: medium; 
+		color: white; 	
+	}
+	td.mand {
+		font-size: 14pt;
+		font-style: italic;
+		font-weight: bold;
+		color: red;
+	}
+	table.table_calc{
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');	
+		background-color: #228B22;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		box-shadow: 5px 4px 10px 2px gray;
+		border: 1px solid black;
+		color: white;
+	}
+	input.result {
+		font-weight: bold;
+		width: 80px;
+	}
+	input.btn {
+		background: #415153;
+		color: white;
+	}
+	input#standing {
+		width: 170px;
+	}
+	img#dance {
+		width: 70px;
+		height: 60px;
+		visibility: hidden;
+	}
+	p#calc_footnote {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+
+	}
+	a#contact_me {
+		color: blue;
+	}

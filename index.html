@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GPA Calculator</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<LINK rel=stylesheet type="text/css" href="calc_style.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body>
+		<div id="c_gpa_calc">
+
+		<table class="table_calc" width= "330" border="0"  cellspacing="0" cellpadding="5" align="center">
+			<form id="gpa_calculator" method="post" onSubmit="return calculator(this);">
+			<tr>
+				<th class="t_header" colspan="3">Grade Scale: 4.00</th>
+			</tr>
+			<tr>
+				<td colspan="2"> Enter Current CGPA: </td>
+				<td><center><input class="user_input" id="cgpa" type="text" title="CGPA has to be between 0 and 4.00" placeholder="e.g. 3.62" ></center></td>
+			</tr>
+			<tr>
+				<td colspan="2">Enter Total Credit Hours Completed: </td>
+				<td><center><input class="user_input" id="tcredits" type="txet" placeholder="e.g. 32"></center></td>
+			</tr>
+			<tr>
+				<td  class="mand" colspan="2">* mandatory field</td>
+			</tr>
+			<tr>
+				<th class="t_header">Course</th>
+				<th class="t_header"><span style="color: red;">* </span>Credit</th>
+				<th class="t_header"><span style="color: red;">* </span>Grade</th>
+			</tr>
+			<script type="text/javascript">
+			
+			var numCourses = 6
+			var grades = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F", "WP", "WF"];
+			for (var i = 0; i < numCourses; i++) {
+				document.write("<tr><td><center><input id='course_input' type='text' name='course[]'></center></td>");
+				document.write("<td><select class='credit_grade' name='credit[]'>");
+				document.write("<option selected='selected'>--</option>")
+				for (var k = 0; k < 5; k++) {
+					document.write("<option value=" + k + ">" + k + "</option>");
+				}
+				document.write("</select></td>");
+				document.write("<td><select class='credit_grade' name='grade[]'>");
+				document.write("<option selected='selected'>--</option>")
+				for (var j = 0; j < grades.length; j++) {
+					document.write("<option value=" + grades[j] + ">" + grades[j] + "</option>");
+				}
+				document.write("</select></td></tr>");
+			}
+			
+			</script>
+			<tr>
+				<td><center>
+					<input class="btn" type="submit" name="calculate" value="Submit" title="Calculate Your GPA/CGPA">
+					<input class="btn" type="reset" name="reset" value="Clear All">
+				</center></td>
+				<td><!--<legend>Total credithours: </legend>-->
+					<input class="user_input" disabled type="text" placeholder="Total Credits" id="credits">
+				</td>
+				<td><!--<legend>Total gradepoints: </legend>-->
+					<input class="user_input" disabled type="text" placeholder="Total Grade" id="grades">
+				</td>
+			</tr>
+			<tr>
+				<td><center><legend class="l_gpa_result">Academic Standing: </legend>
+					<input class="result" id="standing" disabled type="text">
+				</center></td>
+				<td>
+					<img id="dance" name='gpa_image' alt="Smiley face" src="images/celebrate.gif">
+				</td>
+				<td><center><legend class="l_gpa_result">GPA: </legend>
+					<input class="result" id="gpa" disabled type="text" placeholder="GPA">
+				</center></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><center><legend class="l_gpa_result">CGPA: </legend>
+					<input class="result" id="ncgpa" disabled type="text" placeholder="New CGPA">
+				</center></td>
+			</tr>
+			<tr><td></td></tr>
+			</form>
+			<form id="raise_cgpa" method="post" onSubmit="return raise_cgpa(this);" align="center">
+				<!--
+				<tr>
+					<td colspan="3"> <input class="user_input" id="creditraise" type="hidden" placeholder="e.g. 15"></td>
+				</tr>
+				<tr>
+					<td colspan="3">Developed By AGM <input class="user_input" id="cgparaise" type="hidden" placeholder="e.g. 3.45"></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<input class="btn" type="hidden" value="What GPA do I need to have?" title="Calculate GPA you should have">
+						<input class="btn" type="hidden" name="reset" value="Clear All">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><input class="result" id="cgpaget" disabled type="hidden">
+				</td>	
+				</tr>
+				-->
+			</form>
+		</table>
+
+
+
+		</div>
+
+	</body>
+</html>
